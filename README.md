@@ -43,3 +43,20 @@ function getMonthInNumber(number) {
    else return month[number];
 }
 ```
+
+
+week days with form short names 
+```
+function getWeekDayInNumber(name) {
+  var weekDay = new Array();
+  month["Mon"] = 0;
+  month["Tue"] = 1;
+  month["Wed"] = 2;
+  month["Thu"] = 3;
+  month["Fri"] = 4;
+  month["Sat"] = 5;
+  month["Sun"] = 6;
+
+  return  weekDay[name];
+}
+```
