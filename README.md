@@ -3,7 +3,7 @@ all different web tools to get problems  done in a rush.
 
 JS function to get number of month from shortened form.  
 ```
-function getMonthInNumber(name) {
+function getMonthFromShortName(name) {
   var month = new Array();
   month["Jan"] = 0;
   month["Feb"] = 1;
@@ -23,7 +23,7 @@ function getMonthInNumber(name) {
 ```
 JS function to get name of month from number form. 
 ```
-function getMonthInNumber(number) {
+function getMonthNumber(number) {
   var d = new Date();
   var month = new Array();
   month[0] = "January";
@@ -43,6 +43,28 @@ function getMonthInNumber(number) {
    else return month[number];
 }
 ```
+UZBEK Language months
+```
+function getMonthFromNumber(number) {
+    var d = new Date();
+    var month = new Array();
+    month[0] = "Yanvar";
+    month[1] = "Fevral";
+    month[2] = "Mart";
+    month[3] = "Aprel";
+    month[4] = "May";
+    month[5] = "Iyun";
+    month[6] = "Iyul";
+    month[7] = "Avgust";
+    month[8] = "Sentabr";
+    month[9] = "Oktabr";
+    month[10] = "Noyabr";
+    month[11] = "Dekabr";
+    if(number === null)
+        return month[d.getMonth()];
+    else return month[number];
+}
+```
 
 
 week days with form short names 
@@ -58,5 +80,22 @@ function getWeekDayInNumber(name) {
   month["Sun"] = 6;
 
   return  weekDay[name];
+}
+```
+Uzbek Language week days
+```
+function getDayInName(number = null) {
+    var d = new Date();
+    var week = new Array();
+    week[1] = "Dushanba";
+    week[2] = "Seshanba";
+    week[3] = "Chorshanba";
+    week[4] = "Payshanba";
+    week[5] = "Juma";
+    week[6] = "Shanba";
+    week[7] = "Yakshanba";
+    if(number === null)
+        return week[d.getDay()];
+    else return week[number];
 }
 ```
